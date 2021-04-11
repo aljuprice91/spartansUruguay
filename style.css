@@ -1,0 +1,260 @@
+@charset "UTF-8";
+/* VARIABLES*/
+body {
+  text-align: center;
+  background-image: url("logoTransparente.jpg");
+  background-size: 50%;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+}
+
+body .grid__Header {
+  grid-area: header;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(gray), to(black));
+  background-image: linear-gradient(gray, black);
+  top: 0%;
+  border-left: solid 5px grey;
+  border-right: solid 5px grey;
+  border-top: solid 5px grey;
+  border-style: outset;
+  margin: 0;
+  padding: 0;
+}
+
+body .grid__Header h1 {
+  font-family: 'Holtwood One SC', serif;
+  font-size: 50px;
+  /*$tamañoLetra=100px*/
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  color: #f7f3f3;
+}
+
+body .grid__Header h1.titulo {
+  font-size: 50px;
+  /*$tamañoLetra=100px*/
+  font-weight: bold;
+}
+
+body .grid__Header .subtitulo {
+  font-family: 'Bungee Outline', cursive;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  font-size: 1.5em;
+  font-weight: bold;
+  color: darkred;
+}
+
+body .grid__Header nav {
+  color: darkred;
+  /*darkred*/
+}
+
+body .grid__Header .menu {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  -ms-grid-rows: 1fr;
+      grid-template-rows: 1fr;
+}
+
+body .grid__Header .menu ul {
+  list-style: none;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+}
+
+body .grid__Header .menu li {
+  float: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .grid__Header .menu li a {
+  color: white;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+body .grid__Header .menu li a:hover {
+  background-color: #636060;
+}
+
+body .grid__Header .menu h3.tabs {
+  font-size: 1.17em;
+  font-weight: bold;
+  font-family: 'Times New Roman';
+}
+
+body .historia {
+  background-color: white;
+  color: black;
+  width: 80%;
+  height: auto;
+  font-size: 100px -20;
+  /*$tamañoLetra=100px*/
+}
+
+body p.historia {
+  text-align: left;
+}
+
+body .contactanos button.btn.btn-primary {
+  background-color: #842029;
+  border-color: #212529;
+}
+
+body .contactanos label.form-label {
+  font-size: 1.17em;
+  font-weight: bold;
+  font-family: 'Times New Roman';
+}
+
+body .grid__Footer {
+  width: 100%;
+  height: 81px;
+  bottom: 0;
+  left: 0;
+  grid-area: footer;
+  height: 10vh;
+  border-bottom: solid 5px grey;
+  border-left: solid 5px grey;
+  border-right: solid 5px grey;
+  border-top: solid 5px grey;
+  border-style: outset;
+  text-align: center;
+  margin: 0px;
+  padding: 0px;
+  overflow: hidden;
+  background-color: #333;
+  color: white;
+  font-family: 'Holtwood One SC', serif;
+}
+
+body h2.footer {
+  font-size: 1.5em;
+  font-weight: bold;
+  margin-top: 25px;
+}
+
+body section h3 {
+  font-family: 'Bungee', cursive;
+  color: darkred;
+  /*darkred*/
+}
+
+body .grid__Fecha th {
+  font-size: 20px;
+  /*$tamañoLetra=100px*/
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  background-color: #414040;
+  color: whitesmoke;
+}
+
+body .grid__Fecha h4.dentroTabla {
+  font-weight: bold;
+  text-align: center;
+}
+
+body .grid__Fecha .ultimaFecha {
+  background-color: black;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  background-color: black;
+  font-size: 30px;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  color: whitesmoke;
+  border-collapse: separate;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  border-spacing: 2px;
+}
+
+body .grid__Fecha h3.nombreSeccion {
+  font-size: calc(1.3rem + .6vw);
+  font-weight: bold;
+}
+
+body .grid__Galeria ul {
+  list-style: none;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+body .grid__Galeria ul .img {
+  margin: 20px;
+}
+
+body .grid__Galeria ul .img img {
+  width: 100%;
+  height: auto;
+}
+
+body .grid__Galeria ul .img :hover {
+  -webkit-transform: scale(1.5);
+          transform: scale(1.5);
+  -webkit-transition-duration: 0.8s;
+          transition-duration: 0.8s;
+}
+
+body .grid__Galeria .carousel-item {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+}
+
+body .grid__Galeria .carousel-item iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+body .grid__Galeria .carouselVid {
+  width: 50%;
+  height: auto;
+}
+
+@media (max-width: 320px) {
+  h1 {
+    font-size: 30px;
+  }
+  .grid__Footer {
+    font-size: 80%;
+  }
+  .subtitulo {
+    font-size: 90%;
+  }
+  .imgPlantel {
+    width: 100%;
+    height: auto;
+  }
+  .menu {
+    font-size: 70%;
+  }
+}
+/*# sourceMappingURL=style.css.map */
