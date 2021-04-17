@@ -6,6 +6,11 @@ body {
   background-size: 50%;
   background-position: 50% 50%;
   background-repeat: no-repeat;
+  /*Estilo de el parrafo de la historia del palntel*/
+  /* Estilo de html dedicado al contacto con el equipo */
+  /*Estilos del footer*/
+  /*Cuadro del index con el resultado del ultimo partido*/
+  /* diseño de la galeria */
 }
 
 body .grid__Header {
@@ -239,6 +244,7 @@ body .grid__Galeria .carouselVid {
   height: auto;
 }
 
+/* media para hacer responsive a un Celular*/
 @media (max-width: 320px) {
   h1 {
     font-size: 30px;

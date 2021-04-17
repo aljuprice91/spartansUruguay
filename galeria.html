@@ -9,7 +9,6 @@
     <meta name="description" content="Galria de imagenes y videos de nuestros ultimos partidos. ">
     <meta name="keywords" content="FOOTBALL AMERICANO, URUGUAY, LUFA, VIDEOS, IMAGENES, GALERIA" />
     <link rel="icon" type="image/png" href="imagenes/Spartans.png">
-    <!--<link rel="StyleSheet" href="estilo.css">-->
     <link rel="StyleSheet" href="style.css">
     <link href="https://fonts.googleapis.com/css2?family=Holtwood+One+SC&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Bungee+Outline&display=swap" rel="stylesheet">
@@ -21,6 +20,7 @@
 <body>
     <div class="grid">
         <div class="grid__Header">
+            <!--Esta clase inluye la parte del titulo y la barra de navegacion del sitio , se encuentra en el comienzo del body de todos los html del sitio-->
             <header>
                 <h1 class="titulo"><img src="imagenes/Spartans.png" height="158px" width="154px">SPARTANS<img src="imagenes/Spartans.png" height="158px" width="154px"></h1>
                 <h2 class="subtitulo">Football Americano - Uruguay</h2>
@@ -73,8 +73,10 @@
         </div>
         <br>
         <main class="grid__Galeria">
+            <!--Galeria contiene imagenes y videos de los ultimos partidos-->
             <section>
                 <h3 class="nombreSeccion">Fotos</h3>
+                <!--Fotos se encuentran en la carpeta imagenesGaleria -->
                 <ul>
                     <li class="img">
                         <a href="#img1"><img src="imagenesGaleria/DSC_0002.jpg" width="25%" height="25%"></a>
@@ -107,9 +109,11 @@
                 <br>
                 <br>
                 <h3 class="nombreSeccion">Video Partidos</h3>
+                <!-- Esta seccion de la galeria muestra videos de los ultimos partido de el equipo  -->
                 <br>
                 <form>
                     <center>
+                        <!--Clase realizada con Bootstrap y videos traidos desde Youtube del canal de la liga uruguaya de football americano -->
                         <div class="carouselVid">
                             <div id="carouselExampleControlsNoTouching" class="carousel slide" data-bs-touch="false" data-bs-interval="false">
                                 <div class="carousel-inner">
