@@ -147,12 +147,28 @@ body .grid__Footer {
   background-color: #333;
   color: white;
   font-family: 'Holtwood One SC', serif;
+  /* estilo de la liosta de iconos del footer*/
+}
+
+body .grid__Footer li {
+  padding: 2.5px 5px;
+  list-style: none;
+}
+
+body .grid__Footer li a {
+  color: white;
+  text-align: center;
+  padding: 2.5px 5px;
+}
+
+body .grid__Footer li a:hover {
+  background-color: #636060;
 }
 
 body h2.footer {
   font-size: 1.5em;
   font-weight: bold;
-  margin-top: 25px;
+  margin-top: 10px;
 }
 
 body section h3 {
