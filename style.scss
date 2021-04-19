@@ -1,236 +1,258 @@
-        /* VARIABLES*/
-        
-        $tamañoLetra:100px;
-        $rojoSpartans:darkred;
-        body {
-            text-align: center;
-            background-image: url("imagenes/logoTransparente.jpg");
-            background-size: 50%;
-            background-position: 50% 50%;
-            background-repeat: no-repeat;
-            .grid__Header {
-                grid-area: header;
-                background-image: linear-gradient(gray, black);
-                top: 0%;
-                border-left: solid 5px grey;
-                border-right: solid 5px grey;
-                border-top: solid 5px grey;
-                border-style: outset;
-                margin: 0;
-                padding: 0;
-                h1 {
-                    font-family: 'Holtwood One SC', serif;
-                    font-size: $tamañoLetra/2;
-                    /*$tamañoLetra=100px*/
-                    margin: 0px;
-                    padding: 0px;
-                    overflow: hidden;
-                    color: rgb(247, 243, 243)
-                }
-                h1.titulo {
-                    font-size: $tamañoLetra/2;
-                    /*$tamañoLetra=100px*/
-                    font-weight: bold;
-                }
-                .subtitulo {
-                    font-family: 'Bungee Outline', cursive;
+            /*Fuente*/
+            /*letra leyenda footer*/
+            
+            @font-face {
+                font-family: FOT;
+                src: url(letraFot.ttf);
+            }
+            /*letra H1*/
+            
+            @font-face {
+                font-family: TIT;
+                src: url(letraTit.otf);
+            }
+            /*subtitulo*/
+            
+            @font-face {
+                font-family: FAU;
+                src: url(letraSub.otf);
+            }
+            /* VARIABLES*/
+            
+            $tamañoLetra:200px;
+            $rojoSpartans:darkred;
+            body {
+                text-align: center;
+                background-image: url("imagenes/logoTransparente.jpg");
+                background-size: 50%;
+                background-position: 50% 50%;
+                background-repeat: no-repeat;
+                .grid__Header {
+                    grid-area: header;
+                    background-image: linear-gradient(gray, black);
+                    top: 0%;
+                    border-left: solid 5px grey;
+                    border-right: solid 5px grey;
+                    border-top: solid 5px grey;
+                    border-style: outset;
                     margin: 0;
                     padding: 0;
-                    overflow: hidden;
-                    font-size: 1.5em;
-                    font-weight: bold;
-                    color: if( 3 + 2==5, $rojoSpartans, white); //if
-                }
-                nav {
-                    color: $rojoSpartans;
-                    /*darkred*/
-                }
-                .menu {
-                    display: grid;
-                    grid-template-columns: 1fr;
-                    grid-template-rows: 1fr;
-                    ul {
-                        list-style: none;
+                    h1 {
+                        font-family: TIT;
+                        font-size: $tamañoLetra/2;
+                        /*$tamañoLetra=100px*/
                         margin: 0px;
                         padding: 0px;
                         overflow: hidden;
+                        color: rgb(247, 243, 243)
                     }
-                    li {
-                        float: left;
-                        display: flex;
-                        flex-direction: row;
-                        justify-content: space-between;
+                    h1.titulo {
+                        font-size: $tamañoLetra/2;
+                        /*$tamañoLetra=100px*/
+                        /*font-weight: bold;*/
                     }
-                    li a {
-                        color: white;
-                        text-align: center;
-                        padding: 5px 10px;
-                        text-decoration: none;
+                    .subtitulo {
+                        font-family: FAU;
+                        margin: 0;
+                        padding: 0;
+                        overflow: hidden;
+                        font-size: 1.8em;
+                        margin-block-end: 0.90em;
+                        color: if( 3 + 2==5, $rojoSpartans, white); //if
                     }
-                    li a:hover {
-                        background-color: #636060;
+                    nav {
+                        color: $rojoSpartans;
+                        /*darkred*/
                     }
-                    h3.tabs {
+                    .menu {
+                        display: grid;
+                        grid-template-columns: 1fr;
+                        grid-template-rows: 1fr;
+                        ul {
+                            list-style: none;
+                            margin: 0px;
+                            padding: 0px;
+                            overflow: hidden;
+                        }
+                        li {
+                            float: left;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: space-between;
+                        }
+                        li a {
+                            color: white;
+                            text-align: center;
+                            padding: 5px 10px;
+                            text-decoration: none;
+                        }
+                        li a:hover {
+                            background-color: #636060;
+                        }
+                        h3.tabs {
+                            font-size: 1.17em;
+                            font-weight: bold;
+                            font-family: 'Times New Roman';
+                        }
+                    }
+                }
+                /*Estilo de el parrafo de la historia del palntel*/
+                .historia {
+                    background-color: white;
+                    color: black;
+                    width: 80%;
+                    height: auto;
+                    font-size: $tamañoLetra -20;
+                    /*$tamañoLetra=100px*/
+                }
+                p.historia {
+                    text-align: left;
+                }
+                /* Estilo de html dedicado al contacto con el equipo */
+                .contactanos {
+                    button.btn.btn-primary {
+                        background-color: #842029;
+                        border-color: #212529;
+                    }
+                    label.form-label {
                         font-size: 1.17em;
                         font-weight: bold;
                         font-family: 'Times New Roman';
                     }
                 }
-            }
-            /*Estilo de el parrafo de la historia del palntel*/
-            .historia {
-                background-color: white;
-                color: black;
-                width: 80%;
-                height: auto;
-                font-size: $tamañoLetra -20;
-                /*$tamañoLetra=100px*/
-            }
-            p.historia {
-                text-align: left;
-            }
-            /* Estilo de html dedicado al contacto con el equipo */
-            .contactanos {
-                button.btn.btn-primary {
-                    background-color: #842029;
-                    border-color: #212529;
-                }
-                label.form-label {
-                    font-size: 1.17em;
-                    font-weight: bold;
-                    font-family: 'Times New Roman';
-                }
-            }
-            /*Estilos del footer*/
-            .grid__Footer {
-                width: 100%;
-                height: 81px;
-                bottom: 0;
-                left: 0;
-                grid-area: footer;
-                height: 10vh;
-                border-bottom: solid 5px grey;
-                border-left: solid 5px grey;
-                border-right: solid 5px grey;
-                border-top: solid 5px grey;
-                border-style: outset;
-                text-align: center;
-                margin: 0px;
-                padding: 0px;
-                overflow: hidden;
-                background-color: #333;
-                color: white;
-                font-family: 'Holtwood One SC', serif;
-                /* estilo de la liosta de iconos del footer*/
-                li {
-                    padding: 2.5px 5px;
-                    list-style: none;
-                }
-                li a {
+                /*Estilos del footer*/
+                .grid__Footer {
+                    width: 100%;
+                    height: 81px;
+                    bottom: 0;
+                    left: 0;
+                    grid-area: footer;
+                    height: 20vh;
+                    border-bottom: solid 5px grey;
+                    border-left: solid 5px grey;
+                    border-right: solid 5px grey;
+                    border-top: solid 5px grey;
+                    border-style: outset;
+                    text-align: center;
+                    margin: 0px;
+                    padding: 0px;
+                    overflow: hidden;
+                    background-color: #333;
                     color: white;
-                    text-align: center;
-                    padding: 2.5px 5px;
+                    font-family: FOT;
+                    /* estilo de la lista de iconos del footer*/
+                    ul {
+                        margin-top: 70px;
+                    }
+                    li {
+                        padding: 2.5px 5px;
+                        list-style: none;
+                    }
+                    li a {
+                        color: white;
+                        text-align: center;
+                        padding: 2.5px 5px;
+                    }
+                    li a:hover {
+                        background-color: #636060;
+                    }
                 }
-                li a:hover {
-                    background-color: #636060;
+                h2.footer {
+                    font-size: 1.5em;
+                    /* font-weight: bold;*/
+                    margin-top: 30px;
                 }
-            }
-            h2.footer {
-                font-size: 1.5em;
-                font-weight: bold;
-                margin-top: 10px;
-            }
-            section h3 {
-                font-family: 'Bungee', cursive;
-                color: $rojoSpartans;
-                /*darkred*/
-            }
-            /*Cuadro del index con el resultado del ultimo partido*/
-            .grid__Fecha {
-                th {
-                    font-size: $tamañoLetra/5;
-                    /*$tamañoLetra=100px*/
-                    font-family: Georgia, 'Times New Roman', Times, serif;
-                    background-color: rgb(65, 64, 64);
-                    color: whitesmoke;
+                section h3 {
+                    font-family: 'Bungee', cursive;
+                    color: $rojoSpartans;
+                    /*darkred*/
                 }
-                h4.dentroTabla {
-                    font-weight: bold;
-                    text-align: center;
+                /*Cuadro del index con el resultado del ultimo partido*/
+                .grid__Fecha {
+                    th {
+                        font-size: $tamañoLetra/5;
+                        /*$tamañoLetra=100px*/
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        background-color: rgb(65, 64, 64);
+                        color: whitesmoke;
+                    }
+                    h4.dentroTabla {
+                        font-weight: bold;
+                        text-align: center;
+                    }
+                    .ultimaFecha {
+                        background-color: black;
+                        font-size: 30px;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        color: whitesmoke;
+                        background-color: black;
+                        font-size: 30px;
+                        font-family: Georgia, 'Times New Roman', Times, serif;
+                        color: whitesmoke;
+                        border-collapse: separate;
+                        box-sizing: border-box;
+                        border-spacing: 2px;
+                    }
+                    h3.nombreSeccion {
+                        font-size: calc(1.3rem + .6vw); //calculo
+                        font-weight: bold;
+                    }
                 }
-                .ultimaFecha {
-                    background-color: black;
-                    font-size: 30px;
-                    font-family: Georgia, 'Times New Roman', Times, serif;
-                    color: whitesmoke;
-                    background-color: black;
-                    font-size: 30px;
-                    font-family: Georgia, 'Times New Roman', Times, serif;
-                    color: whitesmoke;
-                    border-collapse: separate;
-                    box-sizing: border-box;
-                    border-spacing: 2px;
-                }
-                h3.nombreSeccion {
-                    font-size: calc(1.3rem + .6vw); //calculo
-                    font-weight: bold;
-                }
-            }
-            /* diseño de la galeria */
-            .grid__Galeria {
-                ul {
-                    list-style: none;
-                    display: flex;
-                    flex-direction: row;
-                    justify-content: space-between;
-                    .img {
-                        margin: 20px;
-                        img {
-                            width: 100%;
-                            height: auto;
+                /* diseño de la galeria */
+                .grid__Galeria {
+                    ul {
+                        list-style: none;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        .img {
+                            margin: 20px;
+                            img {
+                                width: 100%;
+                                height: auto;
+                            }
+                        }
+                        .img :hover {
+                            transform: scale(1.5);
+                            transition-duration: 0.8s;
                         }
                     }
-                    .img :hover {
-                        transform: scale(1.5);
-                        transition-duration: 0.8s;
+                    .carousel-item {
+                        position: relative;
+                        padding-bottom: 56.25%;
+                        height: 0;
+                        overflow: hidden;
+                    }
+                    .carousel-item iframe {
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        width: 100%;
+                        height: 100%;
+                    }
+                    .carouselVid {
+                        width: 50%;
+                        height: auto;
                     }
                 }
-                .carousel-item {
-                    position: relative;
-                    padding-bottom: 56.25%;
-                    height: 0;
-                    overflow: hidden;
+            }
+            /* media para hacer responsive a un Celular*/
+            
+            @media (max-width:320px) {
+                h1 {
+                    font-size: 30px;
                 }
-                .carousel-item iframe {
-                    position: absolute;
-                    top: 0;
-                    left: 0;
+                .grid__Footer {
+                    font-size: 80%;
+                }
+                .subtitulo {
+                    font-size: 90%;
+                }
+                .imgPlantel {
                     width: 100%;
-                    height: 100%;
-                }
-                .carouselVid {
-                    width: 50%;
                     height: auto;
                 }
+                .menu {
+                    font-size: 70%;
+                }
             }
-        }
-        /* media para hacer responsive a un Celular*/
-        
-        @media (max-width:320px) {
-            h1 {
-                font-size: 30px;
-            }
-            .grid__Footer {
-                font-size: 80%;
-            }
-            .subtitulo {
-                font-size: 90%;
-            }
-            .imgPlantel {
-                width: 100%;
-                height: auto;
-            }
-            .menu {
-                font-size: 70%;
-            }
-        }
