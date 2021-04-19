@@ -114,6 +114,10 @@
                         background-color: #842029;
                         border-color: #212529;
                     }
+                    button.btn.btn-secondary {
+                        background-color: #212529;
+                        border-color: #842029;
+                    }
                     label.form-label {
                         font-size: 1.17em;
                         font-weight: bold;
@@ -152,9 +156,6 @@
                         color: white;
                         text-align: center;
                         padding: 2.5px 5px;
-                    }
-                    li a:hover {
-                        background-color: #636060;
                     }
                 }
                 h2.footer {
