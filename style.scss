@@ -250,17 +250,17 @@
             
             @media (max-width:320px) {
                 body .grid__Header h1.titulo {
-                    font-size: 30px;
+                    font-size: 32px;
                 }
                 .imgH1 {
-                    width: 50%;
+                    width: 25%;
                     height: auto;
                 }
                 .grid__Footer {
                     font-size: 80%;
                 }
-                .subtitulo {
-                    font-size: 90%;
+                body .grid__Header .subtitulo {
+                    font-size: 20px;
                 }
                 .imgPlantel {
                     width: 100%;
@@ -273,14 +273,18 @@
             /* media para hacer responsive a un Tablet*/
             
             @media (max-width:768px) {
-                h1 {
-                    font-size: 30px;
+                body .grid__Header h1.titulo {
+                    font-size: 50px;
+                }
+                .imgH1 {
+                    width: 19%;
+                    height: auto;
                 }
                 .grid__Footer {
                     font-size: 80%;
                 }
-                .subtitulo {
-                    font-size: 90%;
+                body .grid__Header .subtitulo {
+                    font-size: 22px;
                 }
                 .imgPlantel {
                     width: 100%;
