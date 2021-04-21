@@ -12,18 +12,6 @@
   src: url(letraTit.otf);
 }
 
-/*subtitulo*/
-@font-face {
-  font-family: FAU;
-  src: url(letraSub.otf);
-}
-
-/*tabs*/
-@font-face {
-  font-family: TAB;
-  src: url(letraTab.ttf);
-}
-
 /* VARIABLES*/
 body {
   text-align: center;
@@ -68,7 +56,8 @@ body .grid__Header h1.titulo {
 }
 
 body .grid__Header .subtitulo {
-  font-family: FAU;
+  font-family: 'Graduate', cursive;
+  font-weight: bolder;
   margin: 0;
   padding: 0;
   overflow: hidden;
@@ -129,8 +118,7 @@ body .grid__Header .menu li a:hover {
 
 body .grid__Header .menu h3.tabs {
   font-size: 1.17em;
-  font-weight: bold;
-  font-family: TAB;
+  font-family: 'Graduate', cursive;
 }
 
 body .historia {
@@ -206,10 +194,10 @@ body h2.footer {
 }
 
 body section h3 {
-  font-family: FAU;
+  font-family: 'Graduate', cursive;
+  font-weight: bold;
   color: darkred;
   /*darkred*/
-  /* font-weight: bold;*/
 }
 
 body .grid__Fecha th {

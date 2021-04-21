@@ -11,18 +11,6 @@
                 font-family: TIT;
                 src: url(letraTit.otf);
             }
-            /*subtitulo*/
-            
-            @font-face {
-                font-family: FAU;
-                src: url(letraSub.otf);
-            }
-            /*tabs*/
-            
-            @font-face {
-                font-family: TAB;
-                src: url(letraTab.ttf);
-            }
             /* VARIABLES*/
             
             $tamañoLetra:200px;
@@ -58,7 +46,8 @@
                         /*font-weight: bold;*/
                     }
                     .subtitulo {
-                        font-family: FAU;
+                        font-family: 'Graduate', cursive;
+                        font-weight: bolder;
                         margin: 0;
                         padding: 0;
                         overflow: hidden;
@@ -100,8 +89,7 @@
                         }
                         h3.tabs {
                             font-size: 1.17em;
-                            font-weight: bold;
-                            font-family: TAB;
+                            font-family: 'Graduate', cursive;
                         }
                     }
                 }
@@ -173,10 +161,10 @@
                     margin-top: 30px;
                 }
                 section h3 {
-                    font-family: FAU;
+                    font-family: 'Graduate', cursive;
+                    font-weight: bold;
                     color: $rojoSpartans;
                     /*darkred*/
-                    /* font-weight: bold;*/
                 }
                 /*Cuadro del index con el resultado del ultimo partido*/
                 .grid__Fecha {
