@@ -110,6 +110,7 @@ body .grid__Header .menu li a {
   text-align: center;
   padding: 5px 70px;
   text-decoration: none;
+  border-radius: 15px 50px;
 }
 
 body .grid__Header .menu li a:hover {
@@ -173,7 +174,10 @@ body .grid__Footer {
 }
 
 body .grid__Footer ul {
-  margin-top: 70px;
+  margin-top: 45px;
+  display: inline-block;
+  text-align: center;
+  margin-right: 30px;
 }
 
 body .grid__Footer li {
@@ -184,7 +188,18 @@ body .grid__Footer li {
 body .grid__Footer li a {
   color: white;
   text-align: center;
-  padding: 2.5px 5px;
+  padding: 15px 10px;
+  text-decoration: none;
+  border-radius: 15px 50px;
+}
+
+body .grid__Footer li a .icon {
+  width: 32px;
+  height: 32px;
+}
+
+body .grid__Footer li a:hover {
+  background-color: #636060;
 }
 
 body h2.footer {
@@ -294,6 +309,10 @@ body .grid__Galeria .carouselVid {
   .grid__Footer {
     font-size: 80%;
   }
+  body .grid__Footer li a .icon {
+    width: 25px;
+    height: auto;
+  }
   body .grid__Header .subtitulo {
     font-size: 20px;
   }
@@ -321,6 +340,10 @@ body .grid__Galeria .carouselVid {
   }
   .grid__Footer {
     font-size: 80%;
+  }
+  body .grid__Footer li a .icon {
+    width: 25px;
+    height: auto;
   }
   body .grid__Header .subtitulo {
     font-size: 22px;

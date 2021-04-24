@@ -83,6 +83,7 @@
                             text-align: center;
                             padding: 5px 70px;
                             text-decoration: none;
+                            border-radius: 15px 50px;
                         }
                         li a:hover {
                             background-color: #636060;
@@ -143,7 +144,10 @@
                     font-family: FOT;
                     /* estilo de la lista de iconos del footer*/
                     ul {
-                        margin-top: 70px;
+                        margin-top: 45px;
+                        display: inline-block;
+                        text-align: center;
+                        margin-right: 30px;
                     }
                     li {
                         padding: 2.5px 5px;
@@ -152,7 +156,16 @@
                     li a {
                         color: white;
                         text-align: center;
-                        padding: 2.5px 5px;
+                        padding: 15px 10px;
+                        text-decoration: none;
+                        border-radius: 15px 50px;
+                        .icon {
+                            width: 32px;
+                            height: 32px;
+                        }
+                    }
+                    li a:hover {
+                        background-color: #636060;
                     }
                 }
                 h2.footer {
@@ -247,6 +260,10 @@
                 .grid__Footer {
                     font-size: 80%;
                 }
+                body .grid__Footer li a .icon {
+                    width: 25px;
+                    height: auto;
+                }
                 body .grid__Header .subtitulo {
                     font-size: 20px;
                 }
@@ -274,6 +291,10 @@
                 }
                 .grid__Footer {
                     font-size: 80%;
+                }
+                body .grid__Footer li a .icon {
+                    width: 25px;
+                    height: auto;
                 }
                 body .grid__Header .subtitulo {
                     font-size: 22px;
