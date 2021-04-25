@@ -1,5 +1,6 @@
 @charset "UTF-8";
-/*Fuente*/
+/*Los @media se encuentran en la parte inferior*/
+/*---------------FUENTES---------------*/
 /*letra leyenda footer*/
 @font-face {
   font-family: FOT;
@@ -12,7 +13,8 @@
   src: url(letraTit.otf);
 }
 
-/* VARIABLES*/
+/*-------------- VARIABLES--------------*/
+/*--------------------------------------*/
 body {
   text-align: center;
   background-image: url("imagenes/logoTransparente.jpg");
@@ -312,7 +314,8 @@ body .grid__Galeria .carouselVid {
   height: auto;
 }
 
-/* media para hacer responsive a un Celular*/
+/*---------------@media------------------------*/
+/* @media para hacer responsive a un Celular*/
 @media (min-width: 320px) and (max-width: 767px) {
   body .grid__Header h1.titulo {
     font-size: 38px;
@@ -358,7 +361,7 @@ body .grid__Galeria .carouselVid {
   }
 }
 
-/* media para hacer responsive a un Tablet*/
+/* @media para hacer responsive a un Tablet*/
 @media (min-width: 768px) and (max-width: 1024px) {
   body .grid__Header h1.titulo {
     font-size: 80px;
