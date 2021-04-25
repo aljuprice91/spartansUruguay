@@ -288,8 +288,8 @@ body .grid__Galeria ul .img img {
 }
 
 body .grid__Galeria ul .img :hover {
-  -webkit-transform: scale(1.5);
-          transform: scale(1.5);
+  -webkit-transform: scale(1.6);
+          transform: scale(1.6);
   -webkit-transition-duration: 0.8s;
           transition-duration: 0.8s;
 }
@@ -359,6 +359,28 @@ body .grid__Galeria .carouselVid {
     text-align: center;
     float: none;
   }
+  ul.galeria {
+    padding: 0px;
+    width: 40%;
+    height: auto;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin: 60px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+  }
+  body .grid__Galeria ul .img {
+    margin: 20PX;
+    padding: 1px 2px;
+  }
+  body .grid__Galeria ul .img img {
+    width: 200%;
+    height: auto;
+  }
+  body .grid__Galeria .carouselVid {
+    width: 95%;
+    height: auto;
+  }
 }
 
 /* @media para hacer responsive a un Tablet*/
@@ -393,6 +415,11 @@ body .grid__Galeria .carouselVid {
   }
   body .grid__Header .menu li a {
     padding: 5px 15px;
+  }
+  body .grid__Galeria ul .img a :hover {
+    -webkit-transform: scale(2);
+            transform: scale(2);
+    /*escala de el zoom de las imagenes de la galeria*/
   }
 }
 /*# sourceMappingURL=style.css.map */

@@ -239,7 +239,7 @@
                                 }
                             }
                             .img :hover {
-                                transform: scale(1.5);
+                                transform: scale(1.6);
                                 transition-duration: 0.8s;
                             }
                         }
@@ -308,6 +308,27 @@
                         text-align: center;
                         float: none;
                     }
+                    ul.galeria {
+                        padding: 0px;
+                        width: 40%;
+                        height: auto;
+                        flex-wrap: wrap;
+                        margin: 60px;
+                        margin-top: 0px;
+                        margin-bottom: 0px;
+                    }
+                    body .grid__Galeria ul .img {
+                        margin: 20PX;
+                        padding: 1px 2px;
+                        img {
+                            width: 200%;
+                            height: auto;
+                        }
+                    }
+                    body .grid__Galeria .carouselVid {
+                        width: 95%;
+                        height: auto;
+                    }
                 }
                 /* @media para hacer responsive a un Tablet*/
                 
@@ -342,5 +363,9 @@
                     }
                     body .grid__Header .menu li a {
                         padding: 5px 15px;
+                    }
+                    body .grid__Galeria ul .img a :hover {
+                        transform: scale(2);
+                        /*escala de el zoom de las imagenes de la galeria*/
                     }
                 }
