@@ -324,8 +324,12 @@ body .grid__Galeria .carouselVid {
     width: 20%;
     height: auto;
   }
-  .grid__Footer {
+  body .grid__Fecha .ultimaFecha {
+    font-size: 20px;
+  }
+  body .grid__Footer {
     font-size: 80%;
+    height: 200px;
   }
   body .grid__Footer ul {
     margin-right: 90px;
