@@ -108,6 +108,10 @@
                     }
                     p.historia {
                         text-align: left;
+                        .imgHistoria {
+                            width: 500px;
+                            height: auto;
+                        }
                     }
                     /* Estilo de html dedicado al contacto con el equipo */
                     .contactanos {
@@ -305,6 +309,11 @@
                         width: 100%;
                         height: auto;
                     }
+                    body p.historia .imgHistoria {
+                        width: 80%;
+                        height: auto;
+                        float: none;
+                    }
                     .menu {
                         font-size: 80%;
                     }
@@ -356,6 +365,10 @@
                     }
                     .imgPlantel {
                         width: 100%;
+                        height: auto;
+                    }
+                    body p.historia .imgHistoria {
+                        width: 80%;
                         height: auto;
                     }
                     body .grid__Footer .imgLufa {
