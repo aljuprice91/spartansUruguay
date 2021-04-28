@@ -22,6 +22,7 @@ body {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   /*Estilo de el parrafo de la historia del palntel*/
+  /*tabla de juigadores*/
   /* Estilo de html dedicado al contacto con el equipo */
   /*Estilos del footer*/
   /*Cuadro del index con el resultado del ultimo partido*/
@@ -140,6 +141,11 @@ body p.historia {
 body p.historia .imgHistoria {
   width: 500px;
   height: auto;
+}
+
+body .table-responsive {
+  margin-left: 30px;
+  margin-right: 30px;
 }
 
 body .contactanos button.btn.btn-primary {
