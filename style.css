@@ -22,7 +22,8 @@ body {
   background-position: 50% 50%;
   background-repeat: no-repeat;
   /*Estilo de el parrafo de la historia del palntel*/
-  /*tabla de juigadores*/
+  /*seccion plantel*/
+  /*seccion calendario*/
   /* Estilo de html dedicado al contacto con el equipo */
   /*Estilos del footer*/
   /*Cuadro del index con el resultado del ultimo partido*/
@@ -143,9 +144,25 @@ body p.historia .imgHistoria {
   height: auto;
 }
 
-body .table-responsive {
-  margin-left: 30px;
-  margin-right: 30px;
+body .grid__Plantel {
+  /*tabla de juigadores*/
+}
+
+body .grid__Plantel table.table.table-dark.table-striped {
+  width: 70%;
+}
+
+body .grid__Calendario {
+  /*Tablas del calendario*/
+}
+
+body .grid__Calendario .table-responsive {
+  width: 50%;
+  margin-left: 25%;
+}
+
+body .grid__Calendario th.infoCal.table-secondary {
+  border-bottom-color: currentColor;
 }
 
 body .contactanos button.btn.btn-primary {
@@ -378,6 +395,10 @@ body .grid__Galeria .carouselVid {
   body .grid__Header .menu li {
     text-align: center;
     float: none;
+  }
+  body .grid__Calendario .table-responsive {
+    width: auto;
+    margin-left: auto;
   }
   ul.galeria {
     padding: 0px;
