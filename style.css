@@ -339,7 +339,7 @@ body .grid__Galeria .carouselVid {
 
 /*---------------@media------------------------*/
 /* @media para hacer responsive a un Celular*/
-@media (min-width: 320px) and (max-width: 767px) {
+@media (min-width: 300px) and (max-width: 767px) {
   body .grid__Header h1.titulo {
     font-size: 38px;
   }
