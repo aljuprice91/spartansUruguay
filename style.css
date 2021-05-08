@@ -23,7 +23,9 @@ body {
   background-repeat: no-repeat;
   /*Estilo de el parrafo de la historia del palntel*/
   /*seccion plantel*/
+  /*tabla de juigadores*/
   /*seccion calendario*/
+  /*Tablas del calendario*/
   /* Estilo de html dedicado al contacto con el equipo */
   /*Estilos del footer*/
   /*Cuadro del index con el resultado del ultimo partido*/
@@ -137,6 +139,7 @@ body .historia {
 
 body p.historia {
   text-align: left;
+  font-size: 20px;
 }
 
 body p.historia .imgHistoria {
@@ -144,16 +147,8 @@ body p.historia .imgHistoria {
   height: auto;
 }
 
-body .grid__Plantel {
-  /*tabla de juigadores*/
-}
-
 body .grid__Plantel table.table.table-dark.table-striped {
   width: 70%;
-}
-
-body .grid__Calendario {
-  /*Tablas del calendario*/
 }
 
 body .grid__Calendario .table-responsive {
@@ -161,7 +156,7 @@ body .grid__Calendario .table-responsive {
   margin-left: 25%;
 }
 
-body .grid__Calendario th.infoCal.table-secondary {
+body .grid__Calendario .table-responsive th.infoCal.table-secondary {
   border-bottom-color: currentColor;
 }
 
@@ -355,6 +350,9 @@ body .grid__Galeria .carouselVid {
   body .grid__Fecha .ultimaFecha {
     font-size: 20px;
   }
+  iframe.posteos {
+    width: auto;
+  }
   body .grid__Footer {
     font-size: 80%;
     height: 200px;
@@ -384,8 +382,8 @@ body .grid__Galeria .carouselVid {
     width: 100%;
     height: auto;
   }
-  body p.historia .imgHistoria {
-    width: 80%;
+  body .imgHistoria {
+    width: 100%;
     height: auto;
     float: none;
   }

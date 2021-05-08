@@ -108,25 +108,22 @@
                     }
                     p.historia {
                         text-align: left;
+                        font-size: 20px;
                         .imgHistoria {
                             width: 500px;
                             height: auto;
                         }
                     }
                     /*seccion plantel*/
-                    .grid__Plantel {
-                        /*tabla de juigadores*/
-                        table.table.table-dark.table-striped {
-                            width: 70%;
-                        }
+                    /*tabla de juigadores*/
+                    .grid__Plantel table.table.table-dark.table-striped {
+                        width: 70%;
                     }
                     /*seccion calendario*/
-                    .grid__Calendario {
-                        /*Tablas del calendario*/
-                        .table-responsive {
-                            width: 50%;
-                            margin-left: 25%;
-                        }
+                    /*Tablas del calendario*/
+                    .grid__Calendario .table-responsive {
+                        width: 50%;
+                        margin-left: 25%;
                         th.infoCal.table-secondary {
                             border-bottom-color: currentColor;
                         }
@@ -298,6 +295,9 @@
                     body .grid__Fecha .ultimaFecha {
                         font-size: 20px;
                     }
+                    iframe.posteos {
+                        width: auto;
+                    }
                     body .grid__Footer {
                         font-size: 80%;
                         height: 200px;
@@ -327,8 +327,8 @@
                         width: 100%;
                         height: auto;
                     }
-                    body p.historia .imgHistoria {
-                        width: 80%;
+                    body .imgHistoria {
+                        width: 100%;
                         height: auto;
                         float: none;
                     }
